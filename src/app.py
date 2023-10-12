@@ -2,7 +2,7 @@ from flask import Flask
 import requests
 import csv
 import math
-
+from decouple import config
 
 app = Flask(__name__)
 
@@ -10,7 +10,7 @@ app = Flask(__name__)
 def getLatLong(address):
 
     # TODO: Remove API key
-    api_key = 'AIzaSyCS-tQJH7xwxuleC376r_TlZmAhk1pngVc'
+    api_key = config('GOOGLE_API_KEY')
     base_url = 'https://maps.googleapis.com/maps/api/geocode/json?'
     url =  f'{base_url}address={address}&key={api_key}'
 
