@@ -1,0 +1,8 @@
+# API credentials stored here
+.env
+venv
+.venv
+# Ignore all files and directories starting with ".terraform/"
+.terraform/
+terraform.tfstate
+terraform.tfstate.backup
