@@ -68,6 +68,8 @@ def hello():
 
 @app.route('/address/<address>')
 def findFoodTruck(address):
+
+    # Get latitude and longitude based on address provided
     usr_latitude, usr_longitude = getLatLong(address)
 
     if usr_latitude and usr_longitude:
@@ -80,8 +82,10 @@ def findFoodTruck(address):
             for row in reader:
                 truck_lat = float(row['Latitude'])
                 truck_long = float(row['Longitude'])
+                # Calculate the distance between user location and food truck using haversineDistance function
                 distance = haversineDistance(usr_latitude, usr_longitude, truck_lat, truck_long)
                 
+                # Check if the current food truck is closer than the previous truck
                 if distance < closest_distance:
                     closest_truck = row
                     closest_distance = distance
