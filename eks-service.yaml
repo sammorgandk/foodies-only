@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: eks-petal-linux-service
-  namespace: eks-petal-app
+  name: eks-foodies-linux-service
+  namespace: eks-foodies-app
   labels:
-    app: eks-petal-linux-app
+    app: eks-foodies-linux-app
 spec:
   selector:
-    app: eks-petal-linux-app
+    app: eks-foodies-linux-app
   ports:
     - protocol: TCP
       port: 80
