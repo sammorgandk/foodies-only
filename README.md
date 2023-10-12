@@ -71,7 +71,7 @@ terraform apply
 
 ### Deploy to EKS Cluster
 
-After the creation of a namespace on AWS, create kubeconfif file by running:
+After the creation of a namespace on AWS, create kubeconfig file by running:
 
 ```bash
 aws eks update-kubeconfig --region us-east-2 --name foodies-only
