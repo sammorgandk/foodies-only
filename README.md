@@ -93,7 +93,10 @@ kubectl exec -it foodies-only-deploy-<mypodId> -n foodies-only -- /bin/bash
 
 ## Future Enhancements
 
-- Utilize S3 for data storing
-- Store your AWS credentials securely using environment variables or AWS IAM roles
-- Implement more advanced authentication and authorization mechanisms
+- Use Google Maps direction API and calculate travel time between user and nearest food truck
+- Utilize S3 for data storing and use Lambda functions for file processing
+- Store AWS credentials securely using environment variables or AWS IAM roles
+- Use AWS KMS for encryption (ex: api keys and environment variables)
 - Enhance the UI for a better user experience
+- Use other AWS services like CodeDeploy to build out CI/CD pipelines
+- Set up CloudWatch dashboard for deployment monitoring
