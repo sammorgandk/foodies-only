@@ -50,10 +50,7 @@ To find the closest food truck to a specific address, use the `/address/<address
 
 The application uses a `requirements.txt` file to specify the required Python packages. If you need to add or update dependencies, modify this file and rebuild the Docker image.
 
-## Contributing
+## Further Enhancements
 
-Contributions are welcome! If you have ideas or improvements, feel free to open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+- Mount data on S3 to be accessed by users
+- Encrypt credentials
