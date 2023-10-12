@@ -9,7 +9,6 @@ app = Flask(__name__)
 
 def getLatLong(address):
 
-    # TODO: Remove API key
     api_key = config('GOOGLE_API_KEY')
     base_url = 'https://maps.googleapis.com/maps/api/geocode/json?'
     url =  f'{base_url}address={address}&key={api_key}'
@@ -92,4 +91,4 @@ def findFoodTruck(address):
         return "Error: Unable to retrieve coordinates for the provided address."
     
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000)
