@@ -2,9 +2,20 @@
 
 The Foodies Only Web Service is a Flask-based application that allows users to find the closest San Francisco food truck based on a provided address.
 
-## Prerequisites
+## Accessing the App from a Public Browser
 
-Before running the application, make sure you have the following installed:
+Open a web browser and type the IP address of the public EC2 instance followed by :5000 here:
+
+[http://18.216.0.120:5000/](http://18.216.0.120:5000/)
+
+To find the closest food truck to a specific address, use the `/address/<address>` endpoint:
+
+[http://18.216.0.120:5000/address/123 Main St, San Francisco, CA](http://18.216.0.120:5000/address/123%20Main%20St,%20San%20Francisco,%20CA)
+
+
+## Prerequisites to Run the App Locally
+
+Before running the application locally, make sure you have the following installed:
 
 - [Python](https://www.python.org/downloads/) (3.9 or higher)
 - [Docker](https://docs.docker.com/get-docker/)
